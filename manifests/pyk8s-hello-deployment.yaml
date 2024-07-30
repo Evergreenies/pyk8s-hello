@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: pyk8s-hello
-          image: suyogshimpi/pyk8s-hello:1.0
+          image: suyogshimpi/pyk8s-hello:2.0
           ports:
             - containerPort: 5000
