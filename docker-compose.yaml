@@ -1,0 +1,14 @@
+services:
+  pyk8s-hello:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: suyogshimpi/pyk8s-hello:2.0
+    ports:
+      - "80:5000"
+    restart: always
+    networks:
+      - pyk8s-net
+
+networks:
+  pyk8s-net:

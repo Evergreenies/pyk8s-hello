@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pyk8s-hello
+  labels:
+    app: pyk8s-hello
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: pyk8s-hello-pod
+  template:
+    metadata:
+      labels:
+        app: pyk8s-hello-pod
+    spec:
+      containers:
+        - name: pyk8s-hello
+          image: suyogshimpi/pyk8s-hello:1.0
+          ports:
+            - containerPort: 5000
