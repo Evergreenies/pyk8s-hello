@@ -5,7 +5,7 @@
 replicaCount: 2
 
 image:
-  repository: pyk8s-hello
+  repository: suyogshimpi/pyk8s-hello
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "2.0"
